@@ -13,29 +13,9 @@
     tools:showIn="@layout/my_layout"
     android:onClick="topClick">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
-
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:onClick="topClick" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button 2"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginTop="54dp"
-        android:onClick="bottomClick" />
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="start|center_vertical"
+        android:text="two tenths" />
 </RelativeLayout>
