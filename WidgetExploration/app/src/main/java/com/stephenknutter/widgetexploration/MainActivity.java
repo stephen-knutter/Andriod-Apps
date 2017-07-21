@@ -8,7 +8,6 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-//import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -27,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         RadioButton rbBeijing = (RadioButton) findViewById(R.id.radioButtonBeijing);
         RadioButton rbLondon = (RadioButton) findViewById(R.id.radioButtonLondon);
         RadioButton rbnewYork = (RadioButton) findViewById(R.id.radioButtonNewYork);
-        //final EditText editText = (EditText) findViewById(R.id.editText);
         final TextView editText = (TextView) findViewById(R.id.editText);
         final Button button = (Button) findViewById(R.id.button);
         final TextClock tClock = (TextClock) findViewById(R.id.textClock);
