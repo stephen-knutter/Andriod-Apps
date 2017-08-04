@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 public class DialogShowNote extends DialogFragment {
     private Note mNote;
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -22,22 +24,20 @@ public class DialogShowNote extends DialogFragment {
         TextView txtTitle = (TextView) dialogView.findViewById(R.id.txtTitle);
         TextView txtDescription = (TextView) dialogView.findViewById(R.id.txtDescription);
 
-        txtTitle.setText(mNote.getmTitle());
-        txtDescription.setText(mNote.getmDescription());
+        txtTitle.setText(mNote.getDescription());
+        txtDescription.setText(mNote.getDescription());
 
         ImageView ivImportant = (ImageView) dialogView.findViewById(R.id.imageViewImportant);
         ImageView ivTodo = (ImageView) dialogView.findViewById(R.id.imageViewTodo);
         ImageView ivIdea = (ImageView) dialogView.findViewById(R.id.imageViewIdea);
 
-        if (!mNote.ismImportant()) {
+        if (!mNote.isImportant()) {
             ivImportant.setVisibility(View.GONE);
         }
-
-        if (!mNote.ismTodo()) {
+        if (!mNote.isTodo()) {
             ivTodo.setVisibility(View.GONE);
         }
-
-        if (!mNote.ismIdea()) {
+        if (!mNote.isIdea()) {
             ivIdea.setVisibility(View.GONE);
         }
 

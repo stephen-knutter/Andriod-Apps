@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Note To Me</string>
+    <string name="app_name">Note To Self</string>
     <string name="hello_world">Hello World</string>
     <string name="action_settings">Settings</string>
     <string name="action_add">add</string>

@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (R.id.action_add > 0) {
+        if (item.getItemId() == R.id.action_add) {
             DialogNewNote dialog = new DialogNewNote();
             dialog.show(getFragmentManager(), "");
             return true;
