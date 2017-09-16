@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EventListeners</string>
+    <string name="text">TXT Button</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="milk">Milk</string>
+    <string name="sugar">Sugar</string>
+    <string name="caveman">Caveman</string>
+    <string name="astronaut">Austronaut</string>
+    <string-array name="spinner_values">
+        <item>light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+    </string-array>
+</resources>
